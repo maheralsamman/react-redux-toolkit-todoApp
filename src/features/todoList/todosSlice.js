@@ -9,6 +9,7 @@ const todosSlice = createSlice({
   name: "todolist",
   initialState,
   reducers: {
+// add a todo to the state and to localstorage
     addTodo: (state, { payload }) => {
       state.push(payload);
       localStorageSet(state);
@@ -25,6 +26,7 @@ const todosSlice = createSlice({
         return updatedArr;
       });
     },
+// remove todo from the state and localstorage
     removeTodo: (state, { payload }) => {
       const updatedArr = state.filter((todo) => todo.id !== payload);
       localStorageSet(updatedArr);
