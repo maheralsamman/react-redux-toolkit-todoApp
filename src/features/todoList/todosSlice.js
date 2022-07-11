@@ -14,6 +14,7 @@ const todosSlice = createSlice({
       state.push(payload);
       localStorageSet(state);
     },
+// change todo to complete in state and localstorage
     changeTocomplete: (state, { payload }) => {
       const updatedArr = state;
       updatedArr.forEach((todo) => {
