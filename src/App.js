@@ -4,6 +4,7 @@ import "./App.css";
 import Form from "./components/Form";
 import Todos from "./components/Todos";
 
+// all code removed after adding redux
 function App() {
   return (
     <div className="app">
