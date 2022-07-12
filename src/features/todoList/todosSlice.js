@@ -25,7 +25,6 @@ const todosSlice = createSlice({
         return updatedArr;
       });
     },
-// remove 
     removeTodo: (state, { payload }) => {
       const updatedArr = state.filter((todo) => todo.id !== payload);
       localStorageSet(updatedArr);
