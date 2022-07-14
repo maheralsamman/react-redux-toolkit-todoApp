@@ -25,6 +25,9 @@ const todosSlice = createSlice({
         return updatedArr;
       });
     },
+/*
+ Drop the updatedArr variable and just run a .map method on the state instead in your reducer. 
+ */
     removeTodo: (state, { payload }) => {
       const updatedArr = state.filter((todo) => todo.id !== payload);
       localStorageSet(updatedArr);
