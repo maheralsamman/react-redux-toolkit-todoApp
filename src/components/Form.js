@@ -8,7 +8,6 @@ const Form = () => {
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-
   const titleInputElement = useRef();
 
   const handleChange = (e) => {
