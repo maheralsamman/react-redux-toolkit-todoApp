@@ -25,7 +25,6 @@ const Form = () => {
       titleInputElement.current.className = "form__titleInput--danger";
       return null;
     }
-
     const id = Math.floor(Math.random() * 10000);
     const time = Date.now();
     const completed = false;
